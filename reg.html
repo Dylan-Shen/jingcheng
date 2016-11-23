@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>绿野网-注册</title>
+	<link rel="stylesheet" type="text/css" href="css/index1.min.css">
+</head>
+<body class="body">
+	<div id="reg" class="reg"></div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/sea.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/reg.js"></script>
+
+	<script>
+		seajs.config({
+			base: './'	
+		});
+		seajs.use(['js/reg.js'],function(a){
+			a.initPage();
+		});
+	</script>
+</body>
+</html>
